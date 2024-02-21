@@ -45,7 +45,7 @@
     height: 750px;
     background-color: antiquewhite;
     opacity: 1; 
-     /* adjusts the top of the 3rd page */
+     
 
 }
 
@@ -99,14 +99,14 @@
 }
 
 a.tour-link div > p {
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-    padding: 10px; /* Add padding for visual effect, adjust as needed */
-    margin: 5px 0; /* Space out the paragraphs slightly */
-    cursor: pointer; /* Change cursor to indicate clickability */
+    transition: background-color 0.3s ease; 
+    padding: 10px; 
+    margin: 5px 0;
+    cursor: pointer; 
 }
 
 a.tour-link div > p:hover {
-    background-color: lightgrey; /* Change background color on hover */
+    background-color: lightgrey; 
 }
 
 
@@ -116,7 +116,7 @@ a.tour-link div > p:hover {
     color: white;
     border-radius: 5px;
     text-align: right;
-    margin: 0; /* Adjust as needed */
+    margin: 0; 
 }
 
 
@@ -135,7 +135,7 @@ a.tour-link div > p:hover {
 
 
 .headshots { /* for slide in photos */
-    overflow: hidden; /* Ensures the image part outside the container is not shown during animation */
+    overflow: hidden; 
     
 }
 
@@ -218,11 +218,11 @@ a.tour-link div > p:hover {
 }
 
 .introductionText {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
     animation: 
       typing 4s steps(16, end),
       blink-caret 2s step-end infinite;
@@ -232,7 +232,7 @@ a.tour-link div > p:hover {
     to { width: 18% }
   }
   
-  /* The typewriter cursor effect */
+  
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
@@ -285,45 +285,43 @@ These css classes are for newscaryap, original design. new design is nav bar
 
 .fa-brands.fa-youtube {
 
-    font-size: 24px; /* Set the icon size */
+    font-size: 24px; 
     position: absolute;
     top: 30px;
     right: 63px;
    
-    color: #000000; /* Set the default color */
+    color: #000000;
     text-decoration: none;
 
 }
 
 .fa-brands.fa-facebook {
-    font-size: 24px; /* Set the icon size */
+    font-size: 24px;    
     position: absolute;
     top: 30px;
     right: 30px;
     
-    color: #000000; /* Set the default color */
+    color: #000000;
     text-decoration: none;
 }
 
 .fa-brands.fa-instagram {
-    font-size: 24px; /* Set the icon size */
+    font-size: 24px; 
     position: absolute;
     top: 30px;
     right: 100px;
-
-    
-    color: #000000; /* Set the default color */
+    color: #000000; 
     text-decoration: none;
 }
 
 .fa-brands.fa-twitter {
-    font-size: 24px; /* Set the icon size */
+    font-size: 24px; 
     position: absolute;
     top: 30px;
     right: 130px;
 
     
-    color: #000000; /* Set the default color */
+    color: #000000; 
     text-decoration: none;
 }
 
