@@ -47,18 +47,19 @@
 
 
 .coming-soon h2 { /*start countdown*/
-    font-size: 40px;
-    padding-bottom: 10%;
+    font-size: 20px;
+    padding-top: -15%;
 
 }
 
 .coming-soon {
-    color:aliceblue;
+    color:rgb(5, 10, 14);
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    
 
 }
 
@@ -69,8 +70,9 @@
 }
 
 .day, .hour, .minute, .second {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
+
 
 }
 
