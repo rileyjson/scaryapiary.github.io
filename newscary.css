@@ -1,0 +1,459 @@
+.topSection { /*JS*/
+    
+    background-image: url('bandphoto.jpg');
+    position: relative;
+    background-size: cover; 
+    padding-bottom: 45px;
+    background-position: center 50px; 
+    min-height: 120vh;
+
+}
+.navbar-light {
+    background-color:aliceblue
+}
+
+.navbar-light ul li {
+
+    margin-right: 30px;
+    font-size: 24px;
+    font-family: 'Long Cang';
+
+}
+
+.navbar-light ul li:hover {
+    
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.contentSection { /*JS*/
+    height: 1000px;
+    background-color: #1c0707; 
+    opacity: 1; 
+    
+}
+
+.thirdSection {
+    height: 750px;
+    background-color: azure;
+    opacity: 1; 
+    margin-top: -100px; /* adjusts the top of the 3rd page */
+}
+
+.fourthSection {
+    height: 750px;
+    background-color: antiquewhite;
+    opacity: 1; 
+     /* adjusts the top of the 3rd page */
+
+}
+
+.transparent { /*JS*/
+    background-color: rgba(255, 255, 255, 0); 
+    opacity: 0; 
+}
+
+
+.coming-soon h2 { /*start countdown*/
+    font-size: 40px;
+    padding-bottom: 10%;
+
+}
+
+.coming-soon {
+    color:aliceblue;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day, .hour, .minute, .second {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+.tour-date a.tour-link {      /*start tour*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a.tour-link div > p {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    padding: 10px; /* Add padding for visual effect, adjust as needed */
+    margin: 5px 0; /* Space out the paragraphs slightly */
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+a.tour-link div > p:hover {
+    background-color: lightgrey; /* Change background color on hover */
+}
+
+
+.tickets p {
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    text-align: right;
+    margin: 0; /* Adjust as needed */
+}
+
+
+
+.tickets p:hover {
+    background-color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+.headshots { /* for slide in photos */
+    overflow: hidden; /* Ensures the image part outside the container is not shown during animation */
+    
+}
+
+#riley {
+    width:50%;
+    max-width: 50%;
+    padding-top: 150px;
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+#caleb {
+    width:50%;
+    max-width: 50%;
+
+    padding-top: 150px;
+    animation: slideInFromRight 2s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(30%);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(30%);
+    }
+}
+
+.introductionText {
+    color:aliceblue;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.frontpagevideo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.description {
+    color:aliceblue;
+    position: relative;
+    bottom: 0;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+.rileyName {
+    color:aliceblue;
+    font-family: 'Long Cang';
+    position: relative;
+    top: 150px;
+    bottom: 0;
+    font-size: 24px;
+    text-align: center;
+  
+}
+
+.calebName {
+    color:aliceblue;
+    font-family: 'Long Cang';
+    position: relative;
+    top: 150px;
+    bottom: 0;
+    font-size: 24px;
+    text-align: center;
+  
+}
+
+.introductionText {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4s steps(16, end),
+      blink-caret 2s step-end infinite;
+}
+@keyframes typing { /*typing effect*/
+    from { width: 0 }
+    to { width: 18% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+/*
+.leftUL {
+
+    margin-left: 170px; 
+    margin-top: -110px;
+}
+
+.rightUL {
+    float: right; 
+    margin-top: -65px;
+    margin-right: 15px;
+}
+
+.rightUL li {
+    display: inline-block; /* Display list items horizontally 
+} 
+
+
+header nav ul li a {
+    text-decoration: none; /* Remove underline from anchor text 
+    color:aliceblue; 
+}
+
+.Myheader nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(163, 153, 52);
+}
+
+
+header nav ul li {
+    display: inline-block; /* Display list items horizontally 
+    margin-right: 55px;  /*Add some space between list items  
+    font-size: 35px;
+    font-family: 'Long Cang'; text-decoration: none;
+
+   
+}
+These css classes are for newscaryap, original design. new design is nav bar
+*/
+
+
+
+
+
+.fa-brands.fa-youtube {
+
+    font-size: 24px; /* Set the icon size */
+    position: absolute;
+    top: 30px;
+    right: 63px;
+   
+    color: #000000; /* Set the default color */
+    text-decoration: none;
+
+}
+
+.fa-brands.fa-facebook {
+    font-size: 24px; /* Set the icon size */
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    
+    color: #000000; /* Set the default color */
+    text-decoration: none;
+}
+
+.fa-brands.fa-instagram {
+    font-size: 24px; /* Set the icon size */
+    position: absolute;
+    top: 30px;
+    right: 100px;
+
+    
+    color: #000000; /* Set the default color */
+    text-decoration: none;
+}
+
+.fa-brands.fa-twitter {
+    font-size: 24px; /* Set the icon size */
+    position: absolute;
+    top: 30px;
+    right: 130px;
+
+    
+    color: #000000; /* Set the default color */
+    text-decoration: none;
+}
+
+.socialLogos li {
+    display: inline-block; /*KEEPS FROM BEING A BULLETED LIST*/
+    
+}
+
+
+
+
+
+#myLogo {
+    position: sticky;
+    margin-left: 0px;
+    transition: opacity 0.5s ease;
+    height: 55px;
+}
+
+#myLogo:hover {
+    opacity: 0.6;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
