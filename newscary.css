@@ -1,4 +1,13 @@
+.topSection { /*JS*/
+    
+    background-image: url('bandphoto.jpg');
+    position: relative;
+    background-size: cover; 
+    padding-bottom: 45px;
+    background-position: center 50px; 
+    min-height: 120vh;
 
+}
 .navbar-light {
     background-color:aliceblue
 }
@@ -78,6 +87,10 @@
 
 
 
+
+.music { /* for the videos to be lower on the section */
+    margin-bottom: 65px; 
+}
 
 
 .tour-date a.tour-link {      /*start tour*/
@@ -177,13 +190,25 @@ a.tour-link div > p:hover {
     height: 100vh; 
 }
 
+
 .description {
     color:aliceblue;
     position: relative;
     bottom: 0;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   
+}
+
+.frontpagevideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+
+    margin-bottom: 20px; /*Adds some space between the videos*/
 }
 
 .rileyName {
