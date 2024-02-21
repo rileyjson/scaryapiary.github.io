@@ -8,10 +8,10 @@ function adjustContentVisibilityOnScroll() {
 }
 
 function handleScroll(topSectionHeight, contentSectionHeight) {
-    const thirdSectionHeight = thirdSection.offsetHeight; // Assuming you have this reference
+    const thirdSectionHeight = thirdSection.offsetHeight;
     const secondSectionTrigger = topSectionHeight;
     const thirdSectionTrigger = topSectionHeight + contentSectionHeight;
-    const fourthSectionTrigger = thirdSectionTrigger + thirdSectionHeight; // New trigger for the fourth section
+    const fourthSectionTrigger = thirdSectionTrigger + thirdSectionHeight; 
 
     if (window.scrollY >= secondSectionTrigger) {
         contentSection.classList.add('transparent');
@@ -25,7 +25,6 @@ function handleScroll(topSectionHeight, contentSectionHeight) {
         thirdSection.classList.remove('visible');
     }
 
-    // Logic for the fourth section visibility or changes
     if (window.scrollY >= fourthSectionTrigger) {
         fourthSection.classList.add('visible');
     } else {
@@ -73,20 +72,19 @@ document.addEventListener('DOMContentLoaded', function() {
         var message = document.getElementById('newsMessage');
         var emailValue = emailInput.value.trim();
 
-        // Regular expression for basic email validation
+        //email validation
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if(emailValue === '') {
             message.textContent = 'Please enter an email address.';
             message.style.color = 'red';
         } else if (!emailRegex.test(emailValue)) {
-            // If the input doesn't match the email format
             message.textContent = 'Please enter a valid email address.';
             message.style.color = 'red';
         } else {
             message.textContent = 'Thank you for subscribing!';
             message.style.color = 'green';
-            emailInput.value = ''; // Optionally clear the input field after successful subscription
+            emailInput.value = '';
         }
     });
 });
@@ -98,25 +96,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //start scrolling JS
 document.getElementById('musicClick').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor link behavior
+    event.preventDefault(); 
     
-    // Scroll to the .thirdSection
+    //scroll to the .thirdSection
     document.querySelector('.thirdSection').scrollIntoView({
       behavior: 'smooth'
     });
   });
 
   document.getElementById('tourClick').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor link behavior
+    event.preventDefault();
     
-    // Scroll to the .fourthSection
+    //scroll to the .fourthSection
     document.querySelector('.fourthSection').scrollIntoView({
       behavior: 'smooth'
     });
   });
 
   document.getElementById('newsletterClick').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor link behavior
+    event.preventDefault(); 
     
     document.querySelector('.footer-dark').scrollIntoView({
       behavior: 'smooth'
@@ -124,7 +122,7 @@ document.getElementById('musicClick').addEventListener('click', function(event) 
   });
 
   document.getElementById('aboutClick').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor link behavior
+    event.preventDefault(); 
     
     document.querySelector('.contentSection').scrollIntoView({
       behavior: 'smooth'
@@ -135,15 +133,9 @@ document.getElementById('musicClick').addEventListener('click', function(event) 
 
 
 livetimer();
-
-
 const topSection = document.getElementById('topSection');
 const contentSection = document.getElementById('contentSection');
 const thirdSection = document.getElementById('thirdSection');
 const fourthSection = document.getElementById('fourthSection');
-
-
-
 adjustContentVisibilityOnScroll();
 
-document.getElementById('subscribeButton').addEventListener('click', subscribeMessage);
