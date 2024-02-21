@@ -116,13 +116,16 @@
 
 
 
-    <div class="thirdSection"> <!-- third page on site -->
-        <p class="music" style="text-align:center; font-weight:bold; text-align: center; font-size: 25px;padding-top: 20px;">MUSIC</p>
+    <div class="thirdSection">
+        <p class="music" style="text-align:center; font-weight:bold; font-size: 25px;padding-top: 20px;">MUSIC</p>
         <div class="frontpagevideo">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Zec1veK__EI?si=gfcslol6rKj1OAp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="margin-right: 20px;"></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/e3u3Mvlm4lM?si=x0XsKMOuyX3rmpN9" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Zec1veK__EI?si=gfcslol6rKj1OAp9" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/e3u3Mvlm4lM?si=x0XsKMOuyX3rmpN9" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
-        
     </div>
 
     <div class="fourthSection"> <!-- fourth page on site -->
@@ -176,7 +179,7 @@
                     </div>
                     <div class="col-md-6 item text">
                         <h3>Sign up for the newsletter!</h3>
-                        <input type="text" placeholder="Enter your email" size="50" id="emailInput">
+                        <input type="text" placeholder="Enter your email" id="emailInput">
                         <button class="btn btn-primary" id="subscribeButton">Subscribe</button>
                         <div id="newsMessage"></div>
                     </div>
